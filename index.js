@@ -51,7 +51,7 @@ function writeToFile(filename, data) {
         }
     ])
     .then((data) => {
-        generateMarkdown(data)
+        // generateMarkdown(data)
 
         fs.writeFile(fileName + ".md", JSON.stringify(data, null, '\t'), (err) =>
       err ? console.log(err) : console.log('Success!')
@@ -61,7 +61,7 @@ function writeToFile(filename, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    writeToFile("README")
+    writeToFile("Generated README")
 }
 
 // Function call to initialize app
